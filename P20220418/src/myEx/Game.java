@@ -1,5 +1,6 @@
 package myEx;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
@@ -23,20 +24,19 @@ public class Game {
 
 			}
 		}
-
+		System.out.println(Arrays.toString(problem));
+		
+		System.out.println("숫자를 선택하세요.");
 		while (true) {
-			System.out.println("숫자를 선택하세요.");
 			int sel = sc.nextInt();
-			sc.nextLine();
-
 			for (int i = 0; i < problem.length; i++) {
 				problem[i] = i + 1;
 			}
 			for (int i = 0; i < problem.length; i++) {
-				if (i == 3) {
+				if (i == 5) {
 					System.out.print("[" + "*" + "]");
 				} else {
-					System.out.print("[*]");
+					System.out.print("[?]");
 				}
 			}
 
