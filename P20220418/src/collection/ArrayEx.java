@@ -14,21 +14,25 @@ public class ArrayEx {
 		Friend[] friendAry = new Friend[10];
 		friendAry[0] = new Friend("홍길동", "010-1111");
 		friendAry[1] = new Friend("김길동", "010-2222");
-		friendAry[10] = null;
+		// friendAry[10] = null;
 		for (int i = 0; i < friendAry.length; i++) {
 			if (friendAry[i] != null) {
 				System.out.println(friendAry[i].toString());
 			}
 		}
+		Friend f1 = friendAry[0];
 		// 컬렉션을 활용. 인터페이스 => List:컬렉션 => ArrayList
-		ArrayList<Friend> friendList = new ArrayList<Friend>();
-		friendList.add(new Friend("박길동", "010-3333")); //추가
+		// ArrayList<Friend> friendList = new ArrayList<Friend>();
+		ArrayList friendList = new ArrayList();
+		friendList.add(new Friend("박길동", "010-3333")); // 추가
 		friendList.add(new Friend("최길동", "010-4444"));
 		friendList.remove(0); // 삭제
-		
-		for(int i=0; i<friendList.size(); i++) {
+
+		for (int i = 0; i < friendList.size(); i++) {
 			System.out.println(friendList.get(i));
 		}
+//		Friend f2 = friendList.get(0);
+		Friend f2 = (Friend) friendList.get(0); // get(인덱스) => Object 캐스팅변환
 	}
 
 }

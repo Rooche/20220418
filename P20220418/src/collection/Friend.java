@@ -1,4 +1,4 @@
-package co.edu.friend;
+package collection;
 
 // 친구의 주소록 : 이름, 연락처
 // 학교친구 : 학교이름, 전공과목

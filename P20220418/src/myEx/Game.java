@@ -26,7 +26,7 @@ public class Game {
 		}
 		System.out.println(Arrays.toString(problem));
 		
-		System.out.println("숫자를 선택하세요.");
+		System.out.println("숫자5를 선택하세요.");
 		while (true) {
 			int sel = sc.nextInt();
 			for (int i = 0; i < problem.length; i++) {
@@ -34,6 +34,7 @@ public class Game {
 					System.out.println("[" + problem[i]+ "]");
 				}
 			}
+			System.out.println("정답을 찾으셨습니다");
 		}
 	}
 
