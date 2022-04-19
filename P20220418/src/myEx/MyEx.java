@@ -30,11 +30,9 @@ public class MyEx {
 		}
 		System.out.println(Arrays.toString(score));
 		
+		System.out.println("랜덤 숫자중 5가 몇번째에 있는지 맞추세요.");
 		while(true) {
-			System.out.println("랜덤 숫자중 5가 몇번째에 있는지 맞추세요.");
-			int sel = sc.nextInt();
-//			sc.next
-			int num = 0;
+			int num = sc.nextInt();
 			if(score[0] < num) {
 				System.out.println("틀리셨습니다");
 			} else if(score[0] > num){

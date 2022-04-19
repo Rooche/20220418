@@ -30,16 +30,10 @@ public class Game {
 		while (true) {
 			int sel = sc.nextInt();
 			for (int i = 0; i < problem.length; i++) {
-				problem[i] = i + 1;
-			}
-			for (int i = 0; i < problem.length; i++) {
-				if (i == 5) {
-					System.out.print("[" + "*" + "]");
-				} else {
-					System.out.print("[?]");
+				if((sel - 1) == 5) {
+					System.out.println("[" + problem[i]+ "]");
 				}
 			}
-
 		}
 	}
 
