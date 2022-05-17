@@ -15,7 +15,7 @@ public class Game {
 
 			problem[i] = (int) (Math.random() * 5) + 1;
 
-			for (int j = 0; j < i; j++) {
+			for (int j = 0; j < i; j++) { //랜덤값 중복 안됨
 
 				if (problem[i] == problem[j]) {
 					i--;

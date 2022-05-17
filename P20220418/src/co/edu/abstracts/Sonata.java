@@ -27,16 +27,16 @@ public class Sonata extends Car {
 
 	}
 
-	@Override
-	public void trunOn() {
+//	@Override
+//	public void trunOn() {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
-	public void trunoff() {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+//	@Override
+//	//public void trunoff() {
+//		 TODO Auto-generated method stub
+//
+//	}
+//
+//}

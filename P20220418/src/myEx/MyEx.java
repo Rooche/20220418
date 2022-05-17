@@ -20,7 +20,7 @@ public class MyEx {
 
 			score[i] = (int) (Math.random() * 5) + 1;
 
-			for (int j = 0; j < i; j++) {
+			for (int j = 0; j < i; j++) { //랜덤값 중복 안되게
 
 				if (score[i] == score[j]) {
 					i--;
